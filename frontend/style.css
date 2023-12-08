@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+body {
+    margin: 0; padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'lora';
+    font-weight: 400;
+    font-size: 15pt;    
+}
+
+#header_page {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(255, 0, 0);
+    align-items: center;
+}
+
+#null {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    display: none;
+}
+
+#add {
+    font-size: 15pt;
+    cursor: pointer;
+}
+
+#label_h2 {
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#popup {
+    width: 700px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    display: none;
+}
+
+#header_cad {
+    align-self: flex-end;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* background-color: aqua; */
+}
+
+#txtCadastro{
+    position: absolute;
+    display: flex;
+    align-self: center;
+}
+
+#close {
+    cursor: pointer;
+}
+
+#closeCheck {
+    display: flex;
+    text-align: center;
+    margin-right: 30px;
+    gap: 220px;
+}
+
+#checkbox:checked ~ #popup{
+    display: flex;
+    z-index: 1;
+}
+
+.painel {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: none;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#checkbox:checked ~ .painel {
+    display: flex;
+    z-index: 0;
+}
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#bcad{
+    background-color: #ff0000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input {
+    margin: 10px 0;
+}
+
+p {
+    margin: 5px;
+}
+
+#close {
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+table {
+    margin: auto;
+    border-spacing: 80px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(216, 216, 216);
+    padding: auto;
+}
+
+#header_info {
+    display: flex;
+    justify-content: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#header_info h3 {
+    cursor: pointer;
+}
+
+#informacoes h2 {
+    position: absolute;
+    display: flex;
+    align-self: center;
+}
+
+#informacoes {
+    width: 500px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .5);
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    display: none;
+}
+
+#check:checked ~ #informacoes {
+    display: flex;
+    z-index: 1;
+}
+
+#check:checked ~ .painel {
+    display: flex;
+    z-index: 0;
+}
+
+#excluir {
+    background-color: #ff0000;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 15px;
+}
